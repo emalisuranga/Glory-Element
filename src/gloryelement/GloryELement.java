@@ -24,7 +24,7 @@ public class GloryELement extends Application{
     public void start(Stage primaryStage)throws Exception {
 
         
-      Parent root = FXMLLoader.load(getClass().getResource("../View/Test.fxml"));
+      Parent root = FXMLLoader.load(getClass().getResource("../View/MainMenu.fxml"));
       primaryStage.setTitle("Hello");
       primaryStage.setScene(new Scene(root));
       primaryStage.show();
