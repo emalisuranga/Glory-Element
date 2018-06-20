@@ -18,6 +18,7 @@ import javafx.stage.Stage;
 //import javafx.stage.StageStyle;
 import sun.applet.Main;
 import java.sql.*;
+import java.util.*;
 
 public class GloryELement extends Application{
     
@@ -30,25 +31,29 @@ public class GloryELement extends Application{
       primaryStage.show();
 
     }
-    
+//    void connnection(){
+//      try{
+//          // class.forName("com.mysql.jdbc.Driver");
+//       Connection myConn = DriverManager.getConnection("jdbc:mysql://glorydbase.czf6425elolu.ap-south-1.rds.amazonaws.com:3306/DBGlory","glory","glory123");
+//       Statement myStmt = myConn.createStatement();
+//       ResultSet myrs = myStmt.executeQuery("select * from MasterPool ORDER BY player_hscore DESC");
+//       while(myrs.next()){
+//       System.out.println(myrs.getString("player_name"));
+//       }}
+//       catch(Exception exc){
+//       exc.printStackTrace();
+//       }
+//    }
 
     public static void main(String[] args){
         // TODO code application logic here
         
-       launch(args);
-       // public void start(Stage Stage);
-//       try{
-//       Connection myConn = DriverManager.getConnection("jdbc:mysql://glorydbase.czf6425elolu.ap-south-1.rds.amazonaws.com:3306/DBGlory?zeroDateTimeBehavior=convertToNull [glory on Default schema]","glory","glory123");
-//       Statement myStmt = myConn.createStatement();
-//       ResultSet myrs = myStmt.executeQuery("select * from MasterPool");
-//       while(myrs.next()){
-//      // system.out.println(myrs.getString("player_name"));
-//      myrs.getString("player_name");
-//       }
-//       }
-//       catch(Exception exc){
-//       exc.printStackTrace();
-//       }
+      launch(args);
+//         GloryELement gr = new GloryELement();
+//         gr.connnection();
+     
+     
+     
 //        
     }
     
