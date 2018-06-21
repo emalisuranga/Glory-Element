@@ -38,7 +38,7 @@
             <Font name="Cooper Black" size="26.0" />
          </font>
       </Button>
-      <Button contentDisplay="CENTER" layoutX="438.0" layoutY="530.0" mnemonicParsing="false" prefHeight="79.0" prefWidth="255.0" text="EXIT" textAlignment="JUSTIFY" textFill="#198fc29b" textOverrun="WORD_ELLIPSIS">
+      <Button fx:id="closeButton" contentDisplay="CENTER" layoutX="438.0" layoutY="530.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="79.0" prefWidth="255.0" text="EXIT" textAlignment="JUSTIFY" textFill="#198fc29b" textOverrun="WORD_ELLIPSIS">
          <font>
             <Font name="Cooper Black" size="41.0" />
          </font>

@@ -20,13 +20,7 @@ public class TestController {
 
  public void loginButtonClicked(){
    System.out.println("User");
-   }    
-// public TestController(Stage primaryStage) throws IOException{
-//      Parent root = FXMLLoader.load(getClass().getResource("../View/MainMenu.fxml"));
-//      primaryStage.setTitle("Hello");
-//      primaryStage.setScene(new Scene(root));
-//      primaryStage.show();
-// }  
+   }      
  
   @FXML
     void newPage(ActionEvent event) throws IOException {
@@ -36,5 +30,15 @@ public class TestController {
       stage.setScene(new Scene(root));
       stage.show();
     }
+    
+@FXML private javafx.scene.control.Button closeButton;
+
+@FXML
+ public void closeButtonAction(){
+    // get a handle to the stage
+    Stage stage = (Stage) closeButton.getScene().getWindow();
+    // do what you have to do
+    stage.close();
+}
 
 }
