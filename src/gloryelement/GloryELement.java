@@ -11,11 +11,11 @@ import javafx.scene.Parent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-//import javafx.scene.control.Button;
+
 import javafx.scene.layout.BorderPane;
-//import javafx.scene.layout.StackPane;
+
 import javafx.stage.Stage;
-//import javafx.stage.StageStyle;
+
 import sun.applet.Main;
 import java.sql.*;
 import java.util.*;
