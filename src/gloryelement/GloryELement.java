@@ -32,9 +32,6 @@ public class GloryELement extends Application{
       stage.setScene(scene);   
 
       stage.show();
-//      primaryStage.setTitle("Hello");
-//      primaryStage.setScene(new Scene(root));
-//      primaryStage.show();
         root.setOnMousePressed(new EventHandler<MouseEvent>() {
                     @Override
                     public void handle(MouseEvent event) {
