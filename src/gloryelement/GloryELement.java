@@ -11,24 +11,45 @@ import javafx.scene.Parent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-
 import javafx.scene.layout.BorderPane;
-
 import javafx.stage.Stage;
-
 import sun.applet.Main;
 import java.sql.*;
 import java.util.*;
+import javafx.scene.input.MouseEvent;
+import javafx.stage.StageStyle;
 
 public class GloryELement extends Application{
+    private double xOffset = 0;
+    private double yOffset = 0;
     
-    public void start(Stage primaryStage)throws Exception {
-
+    public void start(Stage stage)throws Exception {
+   
         
       Parent root = FXMLLoader.load(getClass().getResource("../View/MainMenu.fxml"));
-      primaryStage.setTitle("Hello");
-      primaryStage.setScene(new Scene(root));
-      primaryStage.show();
+      stage.initStyle(StageStyle.TRANSPARENT);
+      Scene scene = new Scene(root);
+      stage.setScene(scene);   
+
+      stage.show();
+//      primaryStage.setTitle("Hello");
+//      primaryStage.setScene(new Scene(root));
+//      primaryStage.show();
+        root.setOnMousePressed(new EventHandler<MouseEvent>() {
+                    @Override
+                    public void handle(MouseEvent event) {
+                        xOffset = event.getSceneX();
+                        yOffset = event.getSceneY();
+                    }
+                });
+        
+        root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                stage.setX(event.getScreenX() - xOffset);
+                stage.setY(event.getScreenY() - yOffset);
+            }
+        });
 
     }
 //    void connnection(){
