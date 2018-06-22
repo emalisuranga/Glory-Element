@@ -1,0 +1,34 @@
+.button{
+    -fx-background-color: #66b3ff;
+    -fx-font-weight:bold;
+    -fx-font-size:16;
+    -fx-background-radius:22;
+    -fx-text-fill:white;
+}
+
+.button:hover{
+    -fx-background-color: white;
+    -fx-font-weight:bold;
+    -fx-font-size:16;
+    -fx-background-radius:22;
+    -fx-text-fill:#66b3ff;
+    -fx-border-color:#66b3ff;
+    -fx-border-radius:20;
+    -fx-border-width:3;
+
+}
+
+.button:active {
+    -fx-background-color: #3e8e41;
+    -fx-box-shadow: 0 5px #666;
+    -fx-transform: translateY(4px);
+  }
+  .TableColumn {
+    -fx-border-color: #66b3ff;
+}
+
+.columns{
+        -fx-padding: 8px;
+    -fx-text-align: left;
+    -fx-border-bottom: 1px solid #ddd;
+}

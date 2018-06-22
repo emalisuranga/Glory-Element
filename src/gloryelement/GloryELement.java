@@ -26,7 +26,7 @@ public class GloryELement extends Application{
     public void start(Stage stage)throws Exception {
    
         
-      Parent root = FXMLLoader.load(getClass().getResource("../View/MainMenu.fxml"));
+      Parent root = FXMLLoader.load(getClass().getResource("../View/LeaderBoard/LeaderBoard.fxml"));
       stage.initStyle(StageStyle.TRANSPARENT);
       Scene scene = new Scene(root);
       stage.setScene(scene);   
@@ -67,8 +67,8 @@ public class GloryELement extends Application{
         // TODO code application logic here
         
       launch(args);
-//         GloryELement gr = new GloryELement();
-//         gr.connnection();
+         //GloryELement gr = new GloryELement();
+         //gr.connnection();
      
      
      
